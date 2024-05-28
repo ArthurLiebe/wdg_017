@@ -1,3 +1,4 @@
+// Variables
 // Step 1: Declare variables with `let` and `const`
 
 // Declare a variable named `age` with the value 25
