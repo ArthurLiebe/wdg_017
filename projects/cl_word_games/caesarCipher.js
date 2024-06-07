@@ -43,7 +43,7 @@ const ciphered = userText
             newIndex = newIndex + 26;
         }
         return el === el.toUpperCase()
-            ? alphabet[index].toUpperCase()
+            ? alphabet[newIndex].toUpperCase()
             : alphabet[newIndex];
     })
     .join('');
