@@ -8,7 +8,9 @@ const studentData = {
     picture: 'https://randomuser.me/api/portraits/men/1.jpg',
 };
 
-const Student = ({firstName, lastName, age, course, city, picture}) => {
+const Student = ({
+    student: {firstName, lastName, age, course, city, picture},
+}) => {
     return (
         <div className='card'>
             <img src={picture} alt={firstName} />
@@ -25,7 +27,7 @@ const Student = ({firstName, lastName, age, course, city, picture}) => {
 };
 
 const App = () => {
-    return <Student {...studentData} />;
+    return <Student student={studentData} />;
 };
 
 export default App;

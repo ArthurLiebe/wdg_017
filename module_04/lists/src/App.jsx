@@ -113,8 +113,6 @@ const students = [
 ];
 
 const Grade = ({gpa}) => {
-    console.log(gpa);
-
     switch (true) {
         case gpa >= 97:
             return <li>Grade: A+</li>;
@@ -146,14 +144,7 @@ const Grade = ({gpa}) => {
 };
 
 const Student = ({
-    firstName,
-    lastName,
-    age,
-    course,
-    city,
-    picture,
-    gpa,
-    graduate,
+    student: {firstName, lastName, age, course, city, picture, gpa, graduate},
 }) => {
     return (
         <div className='card'>
@@ -176,7 +167,7 @@ const App = () => {
     return (
         <div className='container'>
             {students.map((student) => (
-                <Student key={student.id} {...student} />
+                <Student key={student.id} student={student} />
             ))}
         </div>
     );
