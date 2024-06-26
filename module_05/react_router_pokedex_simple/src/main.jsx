@@ -7,9 +7,9 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Root from "./roots/root";
-import Home from "./roots/home";
-import PokemonDetail from "./roots/pokemondetail";
+import Root from "./routes/root";
+import Home from "./routes/home";
+import PokemonDetail from "./routes/pokemondetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
